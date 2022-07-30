@@ -18,7 +18,7 @@ const ExpenseTracker = () => {
     const randomizeData = () => setExpenseData(days.map(day => ({ day: day, amount: getRandomNumber() })))
 
     useEffect(() => {
-        setSum(expenseData.reduce((total, current) => { return total + current.amount }, 0))
+        setSum(expenseData.reduce((total: number, current: { amount: number }) => { return total + current.amount }, 0))
     },[expenseData])
 
     return (
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     wrapper: {
-        maxWidth: 400,
+        width: '90%',
+        maxWidth: 375,
         height: 500,
     },
 })
