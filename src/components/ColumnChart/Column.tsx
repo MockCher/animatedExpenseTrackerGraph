@@ -63,10 +63,10 @@ const Column: React.FC<ColumnProps> = ({ label, value, delay, focused, onPress }
     }, [value])
 
     return (
-    <View>
+    <View style={{ flex: 1, width: 40 }}>
         <Pressable 
             style={[
-                { width: 35, height: columnHeightAnimation.interpolate({
+                { minWidth: 10, maxWidth: 35, marginHorizontal: 5, height: columnHeightAnimation.interpolate({
                     inputRange: [0, 1],
                     outputRange: [5, value*3]
                 }), backgroundColor: columnColorAnimation.interpolate({

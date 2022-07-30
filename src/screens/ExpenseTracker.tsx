@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     wrapper: {
-        width: 400,
+        maxWidth: 400,
         height: 500,
     },
 })

@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         alignItems: 'flex-end',
-        padding: 20,
-        justifyContent: 'space-between',
+        padding: 5,
+        justifyContent: 'space-evenly',
     },
 })
 
